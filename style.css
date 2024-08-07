@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 25vw;
+    margin: 80px;
+    border-radius: 25px;
+    /* background-image:url("https://media.istockphoto.com/id/872738908/photo/clear-blue-sky-background-clouds-with-background.jpg?s=612x612&w=0&k=20&c=vGMYH-Gv5tekQ7NeXenZy_xb11UZ58Ec4UohugYVXTI=");  */
+    /* background-size: cover; */
+    background: linear-gradient(138deg, rgb(0, 195, 255), rgb(215, 121, 238));
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 18px;
+    margin-left: -25px;
+}
+
+.search input {
+    width: 280px;
+    height: 35px;
+    border: none;
+    padding: 8px;
+    border-radius: 30px;
+    outline: none;
+    font-size: 20px;
+    margin-top: 15px;
+
+}
+
+.search button {
+    width: 49px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
+.search img {
+    width: 23px;
+    height: 23px;
+}
+
+.weatherImg img {
+    margin-top: -20px;
+    width: 200px;
+    height: 200px;
+}
+
+.temp {
+    font-family: sans-serif;
+    color: white;
+    font-size: 73px;
+    font-weight: 100;
+}
+
+.place {
+    font-family: sans-serif;
+    color: white;
+    font-size: 43px;
+    font-weight: 100;
+
+}
+
+.humid-windspeed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.humidity,
+.windspeed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 9px;
+}
+
+.humidity img,
+.windspeed img {
+    width: 43px;
+    height: 43px;
+}
+
+.percent-humid {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+
+}
+
+.km {
+    color: white;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+
+}
+
+.weather {
+    display: none;
+}
+
+
+@media screen and (max-width: 1259px) {
+    .card {
+        width: 30vw;
+    }
+
+    .temp {
+        font-size: 5vw;
+    }
+
+    .place {
+        font-size: 3.5vw;
+    }
+
+    .humidity img,
+    .windspeed img {
+        width: 6vw;
+    }
+
+    .percent-humid,
+    .km {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width:723px) {
+    .card {
+        width: 50vw;
+    }
+
+    .temp {
+        font-size: 8vw;
+    }
+
+    .place {
+        font-size: 6vw;
+    }
+
+    .humidity img,
+    .windspeed img {
+        width: 10vw;
+    }
+
+    .percent-humid,
+    .km {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .card {
+        width: 90vw;
+    }
+
+    .temp {
+        font-size: 10vw;
+    }
+
+    .place {
+        font-size: 8vw;
+    }
+
+    .humidity img,
+    .windspeed img {
+        width: 15vw;
+    }
+
+    .percent-humid,
+    .km {
+        font-size: 2.5vw;
+    }
+}
